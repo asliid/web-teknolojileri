@@ -1,0 +1,469 @@
+body
+{
+    background: rgb(240,248,255);
+    background: linear-gradient(0deg, rgba(240,248,255,0.8821280211480362) 0%, rgba(0,65,106,1) 100%);
+    padding: 0px;
+}
+/* hakkinda css kodlari */
+.menu-bar, .responsive-menu-bar
+{
+    margin-top: 2%;
+    display:flex;
+    flex-direction:row;
+    text-decoration-color: white;
+    justify-content: space-around;
+    word-wrap: break-word;
+}
+.menu li:hover a
+{
+    color:#073f68;
+    background-color: white;
+}
+.responsive-menu-bar
+{
+    display: none;
+}
+.menu a ,.responsive-menu-bar a
+{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(7,63,104,0.4);
+    box-shadow: 5px 5px 5px black;
+}
+.menu li:hover a
+{
+    background-color: white;
+}
+.menu-bar ul li  ,.responsive-menu-bar ul li
+{
+    list-style-type: none;
+    flex-direction: row;
+    display: inline-block;
+    text-decoration: none;
+}
+.içerik-alan
+{
+    width: 95%;
+    margin: 2%;
+    display: grid;
+    font-size: 20px;
+    grid-gap: 3%;
+    grid-template-columns: 15% 80%;
+}
+.içerik-kitap,.içerik-film,.içerik-hobi
+{
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin-top: 10%;
+}
+.içerik-kitap h3,.içerik-film h3,.içerik-hobi h3
+{
+    border-bottom-style: solid;
+    border-radius: 8%;
+    font-size: 20px;
+    margin-top: 2%;
+
+}
+.alt-alan
+{
+    position: relative;
+    bottom: 15%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.responsive-resim
+{
+    position: relative;
+    left: -11%;
+    width: 200%;
+    height: 200%;
+    margin-bottom: -20%;
+    display: none;
+}
+.hakkinda-resim-3, .hakkinda-resim-4, .hakkinda-resim-5 ,.hakkinda-resim-2,.hakkinda-resim-1
+{
+    
+    border-style: solid;
+    border-radius: 20px;
+    margin-top: 15%;
+    margin-left: 5%;
+
+}
+.hakkinda-resim-3 img , .hakkinda-resim-4 img, .hakkinda-resim-5 img, .hakkinda-resim-2 img,.hakkinda-resim-1 img
+{
+    height: auto;
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+}
+.alan
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+
+}
+@media  only screen and (max-width:570px) , screen and (max-device-width:570px)
+{
+    .menu-bar
+    {
+        display: none;
+    }
+    .responsive-menu-bar
+    {
+        text-align: center;
+        display: block;
+    }
+    .içerik-alan
+    {
+        font-size: 8px;
+    }
+}
+@media  only screen and (max-width:440px) , screen and (max-device-width:440px)
+{
+    .responsive-menu-bar
+    {
+        position: relative;
+        left: -20px; 
+        display: grid;
+        grid-template-rows: 100px;
+        line-height: 25px;
+    }
+    .içerik-alan
+    {
+        position: relative;
+        top: 30px;
+    }
+    .içerik-film h3,.içerik-hobi h3,.içerik-kitap h3
+    {
+        font-size: 7px !important;
+    }
+    .içerik-film,.içerik-hobi,.içerik-kitap
+    {
+        font-size: 8px !important;
+    } 
+}
+@media only screen and (max-width:790px) ,screen and (max-device-width:790px)
+{
+    .menu a
+    {
+        font-size: 8px;
+        margin: 1px;
+        padding: 1px;
+
+    }
+    .içerik-alan
+    {
+        grid-template-columns: 20% 75%;
+    }
+    .menu-bar
+    {
+        text-align: center;
+        justify-content: space-around;
+
+    }
+    .içerik-film,.içerik-hobi,.içerik-kitap
+    {
+        font-size: 11px ;
+    }
+}
+@media  only screen and (max-width:992px) ,screen and (max-device-width:992px)
+{
+    .alt-alan
+    {
+        display: none;
+    }
+    .responsive-resim
+    {
+        display: block;
+    }
+    .hakkinda-resim-3, .hakkinda-resim-4, .hakkinda-resim-5 ,.hakkinda-resim-2, .hakkinda-resim-1
+    {
+
+        border-style: solid;
+        border-radius: 20px;
+        width: 50%;
+        height: 100px;
+        margin-top:5%;
+        margin-left: 5%;
+
+    }
+    .hakkinda-resim-3 img , .hakkinda-resim-4 img, .hakkinda-resim-5 img, .hakkinda-resim-2 img , .hakkinda-resim-1 img
+    {
+        height: auto;
+        border-radius: 17px;
+        width: 100%;
+        height: 100%;
+    }
+    .menu a
+    {
+        font-size: 12px;
+  
+    }
+    .içerik-alan
+    {
+        grid-template-columns: 20% 75%;
+    }
+    .menu-bar
+    {
+        justify-content: space-around;
+    }
+    .içerik-film,.içerik-hobi,.içerik-kitap
+    {
+        font-size: 13px;
+    }
+    .içerik-alan
+    {
+        font-size: 16px;
+    }
+}
+
+
+/*  özgeçmiş css kodları */
+.özgeçmiş-içerik-alan
+{
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 23% 50% 23%;
+    
+}
+.özgeçmiş-alan
+{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    
+    background-color: floralwhite;
+    word-wrap: break-word;
+}
+#özgeçmiş-alan-3
+{
+    position: relative;
+    left: 30px;
+}
+#özgeçmiş-alan-1
+{
+    position: relative;
+    left: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.özgeçmiş-içerik
+{
+    color: black;
+    margin: 20px;
+}
+.özgeçmiş-içerik img
+{
+    
+    margin-left: 8%;
+    margin-top: 6%;
+    border-radius: 30px;
+    height: 25%;
+    width: 80%;
+}
+#özgeçmiş-içerik-1 h3 , #özgeçmiş-içerik-1 h4 , #özgeçmiş-içerik-1 hr
+{
+    position: relative;
+    top: 60px;
+}
+.özgeçmiş-içerik h3
+{
+    font-size: 15px;
+}
+.özgeçmiş-içerik h4
+{
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+.özgeçmiş-içerik h4 a
+{
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+.özgeçmiş-içerik h2
+{
+    font-size: 25px;
+}
+#özgeçmiş-içerik-1
+{
+    position: relative;
+    top: 10px;
+}
+.özgeçmiş-içerik ul li
+{
+    font-size: 15px;
+}
+#özgeçmiş-alan-3 ul
+{
+    background-color: floralwhite;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    margin: 2%;
+}
+#özgeçmiş-alan-3 ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+#özgeçmiş-alan-2
+{
+    background-color: rgb(128,128,128,0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@media screen and (max-width:1100px)
+{
+    .özgeçmiş-içerik ul li
+    {   
+        font-size: 10px;
+    }
+    .özgeçmiş-içerik h2
+    {
+        font-size: 20px;
+    }
+    .özgeçmiş-içerik h4
+    {
+        font-size: 13px;
+    }
+    .özgeçmiş-içerik h4
+    {
+        font-size: 8px;
+        text-decoration: none;
+        color: black;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .özgeçmiş-içerik ul li
+    {   
+        font-size: 10px;
+    }
+    .özgeçmiş-içerik h2
+    {
+        font-size: 15px;
+    }
+    .özgeçmiş-içerik h3
+    {
+        font-size: px;
+    }
+    #özgeçmiş-alan-3 ul
+    {
+        position: relative;
+        left: -40px; bottom: 20px;
+        width: 100%;
+    }
+    .özgeçmiş-içerik h4 a
+    {
+        font-size: 7px;
+        text-decoration: none;
+        color: black;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .özgeçmiş-içerik-alan
+    {
+        margin-left: -5px;
+        width: 100%;
+    }
+    #özgeçmiş-alan-3 ul
+    {
+        position: relative;
+        left: -50px; bottom: 20px;
+        width: 100%;
+    } 
+}
+
+/* sehrim css kodları */
+
+.sehrim-içerik-alan
+{
+    margin-top: 5%;
+    margin-left: 10%;
+    height: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    object-fit: cover;
+
+}
+.sehrim-baslık
+{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 50px;
+}
+.sehrim-alan
+{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.sehrim-içerik-2
+{
+    float: right;
+}
+.sehrim-içerik-1 h1
+{
+    text-align: center;
+    color:brown;
+}
+.sehrim-içerik-2
+{
+    position: relative;
+    left: 20%;
+    width: 110%;
+    background-color: white;
+    border-radius: 20px;
+    font-style: normal;
+}
+.sehrim-içerik-2 ul li a
+{
+    color: black;
+    text-decoration: none;
+    
+}
+img
+{
+    width: 100%;
+    height: 300;
+}
+#slider
+{
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: auto;
+    font: 19px sans-serif;
+    overflow: hidden;
+}
+#kontrol
+{
+    position: absolute;
+    right: 0px; 
+    top: 268px;
+}
+#kontrol a
+{
+    color: white;
+    background-color: rgb(0,0,0,0.5);
+    padding: 10px;
+    text-decoration: none;
+}
